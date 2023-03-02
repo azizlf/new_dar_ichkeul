@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../../services/api';
+
+
 
 @Component({
   selector: 'app-room-details',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,private apiService: ApiService) { }
+
+
+  routeSub:any
+
 
   ngOnInit(): void {
+
+    this.routeSub = this.route.queryParams.subscribe(params => {
+      console.log(params);
+      console.log(+params['id']);
+
+    }); 
   }
 
 }
