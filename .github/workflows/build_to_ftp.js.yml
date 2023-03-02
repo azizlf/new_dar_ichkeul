@@ -40,8 +40,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.cluster030.hosting.ovh.net
-        username: darichr
-        password: 5S5e171078
-        local-dir: dist/
-        server-dir: "/www/TEST_DARICHKEUL/"
+        username: ${{ secrets.USER_FTP}}
+        password: ${{ secrets.PASS_FTP }}
+        local-dir: ${{ secrets.LOCAL_DIR }}
+        server-dir: ${{ secrets.REMOTE_DIR }}
         dangerous-clean-slate: true # optional
