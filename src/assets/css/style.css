@@ -49,6 +49,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 * {
     margin: 0;
@@ -898,7 +899,8 @@ color: #aa8453;
     padding: 15px 0;
     color: #222;
 }
-
+.nav-scroll .logo {
+}
 .nav-scroll .logo-img {
     width: 160px;
     margin-bottom: 0px;
@@ -1543,7 +1545,7 @@ hr {
     font-weight: 400;
     letter-spacing: 5px;
 }
-
+#kenburnsSliderContainer .vegas-overlay {}
 @media screen and (max-width: 767px) {
 .kenburns-inner .caption h4 {
     font-size: 12px;
@@ -1691,9 +1693,11 @@ hr {
 .slider-grid-bg .grid-img-active {
     opacity: 1;
     transform: scale(1.03);
-
+    -webkit-filter: brightness(70%);
 }
-
+.slider-grid-bg:hover .grid-img-active {
+    -webkit-filter: brightness(70%);
+}
 .slider-grid-bg .content {
     position: relative;
     z-index: 2
@@ -1988,7 +1992,7 @@ hr {
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 100%;
 }
-.banner-header .arrow i:hover {
+/* .banner-header .arrow i:hover {
     border: 1px solid #fff;
 }
 .banner-header .arrow i:hover:after {
@@ -1998,9 +2002,10 @@ hr {
     -webkit-transition: all .5s;
     transition: all .5s;
 
-}
+} */
 
 @media screen and (max-width: 767px) {
+
 
     .banner-header.full-height h1 {
         font-size: 30px;
@@ -2019,7 +2024,6 @@ hr {
         font-size: 12px;
     }
 
-    .banner-header h5 {}
     .banner-header h1 {
         font-size: 45px;
     }
@@ -5100,6 +5104,8 @@ select {
     padding: 0 30px;
     border: 1px solid #adadad;
     color: #adadad;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 

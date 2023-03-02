@@ -15,7 +15,7 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
 import { ActivitiesComponent } from './components/activities/activities.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { APP_BASE_HREF } from "@angular/common";
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +35,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatNativeDateModule,
   ],
-  providers: [],
+  providers: [
+   { provide: APP_BASE_HREF, useValue: '/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
