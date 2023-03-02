@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  API:"https://www.heart-of-carthage-dubai.com/admin/me/"
 };

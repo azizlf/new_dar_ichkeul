@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent },
   {path: 'restaurant', component: RestaurantComponent },
   {path: 'rooms', component: RoomGridComponent },
-  {path: 'room-deatils/:id', component: RoomDetailsComponent }
+  {path: 'room/:id', component: RoomDetailsComponent }
 ];
 
 @NgModule({

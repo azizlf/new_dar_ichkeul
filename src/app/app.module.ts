@@ -13,6 +13,8 @@ import { RoomGridComponent } from './components/room-grid/room-grid.component';
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ActivitiesComponent } from './components/activities/activities.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
