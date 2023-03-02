@@ -2,7 +2,7 @@
 
  01. Basics style
  02. Helper style
- 03. Selection style 
+ 03. Selection style
  04. Preloader style
  05. Owl-Theme custom style
  06. Section style
@@ -39,7 +39,7 @@
  37. toTop Button style
  38. Overlay Effect Bg image style
  39. Responsive (Media Query)
- 
+
 ------------------------------------------------------- */
 
 
@@ -49,7 +49,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
 }
 * {
     margin: 0;
@@ -282,7 +281,7 @@ blockquote cite:before {
     bottom: 5px;
     width: 45px;
     height: 1px;
-    border-top: 1px solid; 
+    border-top: 1px solid;
     border-color:inherit;
     color: #aa8453;
 }
@@ -386,7 +385,7 @@ blockquote cite:before {
 .owl-carousel .owl-nav button.owl-next, 
 .owl-carousel .owl-nav button.owl-prev, 
 .owl-carousel button.owl-dot {
-    outline: none;
+outline: none;
 }
 
 /* background & color */
@@ -899,8 +898,7 @@ color: #aa8453;
     padding: 15px 0;
     color: #222;
 }
-.nav-scroll .logo {
-}
+
 .nav-scroll .logo-img {
     width: 160px;
     margin-bottom: 0px;
@@ -1363,14 +1361,14 @@ hr {
     font-size: 12px;
     line-height: 1.75em;
     margin-top: 15px;
-} 
+}
 
 .header div.reservation .call span {
        font-family: 'Gilda Display', serif;
     font-size: 24px;
     color: #aa8453;
     letter-spacing: 1px;
-} 
+}
 
 .header div.reservation .icon {
     position: absolute;
@@ -1545,11 +1543,11 @@ hr {
     font-weight: 400;
     letter-spacing: 5px;
 }
-#kenburnsSliderContainer .vegas-overlay {}
+
 @media screen and (max-width: 767px) {
 .kenburns-inner .caption h4 {
     font-size: 12px;
-}   
+}
 .kenburns-inner .caption h1 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -1562,7 +1560,7 @@ hr {
     letter-spacing: 5px;
     line-height: 1.35em;
 }
-    
+
     .kenburns-inner .caption {
     text-align: center;
     }
@@ -1593,13 +1591,13 @@ hr {
     font-size: 12px;
     line-height: 1.75em;
     margin-top: 15px;
-} 
+}
 .kenburns-section div.reservation .call span {
        font-family: 'Gilda Display', serif;
     font-size: 24px;
     color: #aa8453;
     letter-spacing: 1px;
-} 
+}
 .kenburns-section div.reservation .icon {
     position: absolute;
     left: -1px;
@@ -1693,11 +1691,9 @@ hr {
 .slider-grid-bg .grid-img-active {
     opacity: 1;
     transform: scale(1.03);
-    -webkit-filter: brightness(70%);
+
 }
-.slider-grid-bg:hover .grid-img-active {
-    -webkit-filter: brightness(70%);
-}
+
 .slider-grid-bg .content {
     position: relative;
     z-index: 2
@@ -1781,7 +1777,7 @@ hr {
     font-family: 'Barlow Condensed', sans-serif;
     display: inline;
 
-        
+
 }
 .slider-grid-bg .grid-con:hover .subtitle {
     color: #aa8453;
@@ -2005,15 +2001,14 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-header {}
-    
+
     .banner-header.full-height h1 {
         font-size: 30px;
         margin-bottom: 15px;
         letter-spacing: 10px;
         line-height: 1.35em;
     }
-    
+
     .banner-header.full-height h3 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -2023,7 +2018,7 @@ hr {
     .banner-header.full-height h4 {
         font-size: 12px;
     }
-    
+
     .banner-header h5 {}
     .banner-header h1 {
         font-size: 45px;
@@ -2082,7 +2077,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: right;
-    
+
 }
 .video-lauch-wrapper {
   border: none;
@@ -2101,7 +2096,7 @@ hr {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
-  text-align: center; 
+  text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2546,7 +2541,7 @@ hr.border-2 {
 .reservations .text p {
     font-size: 15px;
     margin: 0;
-    
+
 }
 .reservations .text a {
     font-size: 27px;
@@ -3026,7 +3021,7 @@ hr {
   left: 0px;
 }
 .services .content .cont .more:hover {
-   color: #222; 
+   color: #222;
 }
 .services .content .info h6 {
     font-size: 15px;
@@ -3052,7 +3047,7 @@ hr {
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .services .content .date {
@@ -3885,7 +3880,7 @@ button.mfp-arrow {
 }
 .pricing-card .desc {
     padding: 40px;
-} 
+}
 .pricing-card .name {
     line-height: 1;
     margin: 0;
@@ -4559,7 +4554,7 @@ button.mfp-arrow {
     font-size: 24px;
     color: #222;
 }
-.map {	
+.map {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	}
@@ -4995,7 +4990,7 @@ button.mfp-arrow {
 }
 .footer-explore-list li a:hover {
   padding-left: 15px;
-  color: #aa8453);
+  color: #aa8453;
 }
 .footer-explore-list li a:before {
   position: absolute;
@@ -5105,8 +5100,6 @@ select {
     padding: 0 30px;
     border: 1px solid #adadad;
     color: #adadad;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 
 
@@ -5406,7 +5399,7 @@ select {
         width: 100%;
         display: none;
     }
-    
+
     .dropdown:hover .dropdown-menu,
     .dropdown:hover .mega-menu {
         display: block;
@@ -5442,7 +5435,7 @@ select {
     .header .caption h1 {
         font-size: 40px;
     }
-    
+
     .video-fullscreen-wrap .booking-box,
     .kenburns-inner .booking-box,
     .banner-header .booking-box {
@@ -5459,14 +5452,14 @@ select {
         letter-spacing: 10px;
         line-height: 1.35em;
     }
-    
+
     .header .caption h3 {
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 10px;
     line-height: 1.35em;
     }
-    
+
     .header .caption h4 {
         font-size: 12px;
     }
@@ -5487,11 +5480,11 @@ select {
     .post-comment-section h3 span {
         margin-left: 0px;
     }
-    
+
     .banner-header .caption {
     text-align: center;
     }
-    
+
     .video-fullscreen-wrap .caption.textleft,
     .video-fullscreen-wrap .caption {
         text-align: center;

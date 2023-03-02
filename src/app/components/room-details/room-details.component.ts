@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-room-details',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./room-details.component.css']
 })
 export class RoomDetailsComponent implements OnInit {
-
-  constructor() { }
+  public href: string = "";
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.href = this.router.url;
+    console.log(this.router);
   }
 
 }
