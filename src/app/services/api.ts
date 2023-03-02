@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 //import { MatSnackBar } from '@angular/material/snack-bar';
 import {environment} from "../../environments/environment"
+import rooms from '../data/room.json';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +13,9 @@ export class ApiService {
   //private apiUrl = 'https://www.heart-of-carthage-dubai.com/admin/me//suits?today=true';
 
   page: number = 1;
-  //public rooms = rooms;
+  public rooms = rooms;
   //public aboutcarousels = aboutcarousel;
-  //public roomdetails = rooms;
+  public roomdetails = rooms;
   //public roomcategory = roomcategory;
   //public author = authors;
 
@@ -64,12 +65,13 @@ export class ApiService {
   public getRoomByCategory(items: string | any[]) {
     var elems = rooms.filter((room: { id: string; category: any[]; }) => { return parseInt(room.id) !== parseInt(this.route.snapshot.params.id) && room.category.some(r => items.includes(r)) });
     return elems;
-  }
+  }*/
   // Single Room
   public setRoom(id: any) {
     this.roomdetails = rooms.filter((item: { id: any; }) => { return item.id == id });
-  }
-
+    return this.roomdetails
+    }
+  /*
   public getSingleSuite(title:string){
     return this.http.get(this.ApiPath+'/reservations/check/room?room='+title)
  

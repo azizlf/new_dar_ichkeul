@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../../services/api';
+
+
 
 @Component({
   selector: 'app-room-details',
@@ -7,12 +11,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./room-details.component.css']
 })
 export class RoomDetailsComponent implements OnInit {
-  public href: string = "";
-  constructor(private router: Router) {}
+
+  constructor(private route: ActivatedRoute,private apiService: ApiService) { }
+
+
+  routeSub:any
+
 
   ngOnInit(): void {
-    this.href = this.router.url;
-    console.log(this.router);
+
+    this.routeSub = this.route.queryParams.subscribe(params => {
+      console.log(params);
+      console.log(+params['id']);
+
+    });
   }
 
 }
