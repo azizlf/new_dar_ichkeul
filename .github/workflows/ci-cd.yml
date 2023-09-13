@@ -43,5 +43,5 @@ jobs:
         username: darichr
         password: 5S5e171078
         local-dir: dist/hotels/
-        server-dir: "www/TEST_DARICHKEUL/Miranda/"
+        #server-dir: "www/TEST_DARICHKEUL/Miranda/"
         dangerous-clean-slate: true # optional
